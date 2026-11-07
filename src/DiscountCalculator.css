@@ -145,3 +145,189 @@
   font-size: 19px;
   color: #2563eb;
 }
+/* ===== Самостоятельная работа ===== */
+
+/* Шаблон Vite (index.css) центрирует текст — внутри калькулятора выравниваем влево */
+.calculator-wrapper {
+  text-align: left;
+}
+
+.calculator-title {
+  text-align: center;
+}
+
+/* --- Задание 1: список товаров --- */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.item {
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  background: #fafafa;
+}
+
+.item_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item_title {
+  font-weight: 700;
+  color: #374151;
+}
+
+.item_remove {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  background: #fee2e2;
+  color: #ef4444;
+  cursor: pointer;
+}
+
+.item_remove:hover {
+  background: #fecaca;
+}
+
+.field--last {
+  margin-bottom: 0;
+}
+
+.field_select:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn--add {
+  width: 100%;
+  margin-bottom: 20px;
+  background: transparent;
+  color: #3b82f6;
+  border: 2px dashed #93c5fd;
+}
+
+.btn--add:hover {
+  background: #eff6ff;
+}
+
+/* --- Задание 2: промокод --- */
+.field_input--ok {
+  border-color: #22c55e;
+}
+
+.field_hint {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #16a34a;
+}
+
+/* --- Задания 3 и 4: переключатели и ползунок --- */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+}
+
+.switch input {
+  width: 16px;
+  height: 16px;
+  accent-color: #3b82f6;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.range input {
+  flex: 1;
+  accent-color: #3b82f6;
+}
+
+.range_value {
+  min-width: 44px;
+  text-align: right;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* --- Таблица по позициям --- */
+.results_table--items {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.results_table--items th {
+  padding: 6px 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  color: #9ca3af;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.results_table--items th:first-child {
+  text-align: left;
+}
+
+/* --- Задание 5: история расчётов --- */
+.history {
+  margin-top: 24px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.history_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history_clear {
+  border: none;
+  background: none;
+  color: #6b7280;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.history_list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.history_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 6px 0;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.history_meta {
+  color: #6b7280;
+}
+
+.history_total {
+  white-space: nowrap;
+  font-weight: 700;
+  color: #111827;
+}
