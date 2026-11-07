@@ -1,0 +1,98 @@
+.feedback-form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+/* Блок поля (label + input + error) */
+.field {
+  margin-bottom: 20px; /* ГЛАВНЫЙ ОТСТУП МЕЖДУ ПОЛЯМИ */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Отступ между подписью и полем */
+}
+
+/* Подписи */
+.field_label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+}
+
+/* Поля ввода */
+.field_input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  outline: none;
+  box-sizing: border-box; /* ВАЖНО: чтобы padding не увеличивал ширину */
+  transition: all 0.2s ease;
+}
+
+.field_input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Стили ошибок */
+.field_input--error {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.field_error {
+  font-size: 13px;
+  color: #ef4444;
+  margin-top: 6px;
+  min-height: 18px; /* Чтобы текст ошибки не прыгал */
+}
+
+/* Кнопка */
+.feedback-form_submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.feedback-form_submit:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.feedback-form_submit:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Экран успеха */
+.feedback-form--success {
+  text-align: center;
+}
+
+.feedback-form_title {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.feedback-form_text {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 24px;
+}
